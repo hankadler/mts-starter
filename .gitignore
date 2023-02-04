@@ -1,0 +1,15 @@
+# exclude
+*
+
+# include
+!src
+!src/**
+!test
+!test/**
+!.gitignore
+!.eslintrc.json
+!.mocharc.json
+!package.json
+!package-lock.json
+!tsconfig.json
+!README.md
