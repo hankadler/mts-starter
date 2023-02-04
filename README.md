@@ -1,4 +1,4 @@
-# README.md
+# Core Starter
 
 A core TypeScript starter project in ES
 
