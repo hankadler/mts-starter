@@ -35,6 +35,9 @@
     "object-curly-newline": ["error", {
       "multiline": true
     }],
+    "object-property-newline": ["error", {
+      "allowAllPropertiesOnSameLine": false
+    }],
     "quotes": ["error", "double"]
   }
 }
