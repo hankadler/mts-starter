@@ -1,5 +1,5 @@
 {
-  "name": "mts-core",
+  "name": "<name>",
   "version": "0.1.0",
   "main": "src/index.ts",
   "type": "module",
@@ -7,9 +7,9 @@
     "lint": "eslint .",
     "format": "eslint . --fix",
     "ts-node": "node --experimental-specifier-resolution=node --loader=ts-node/esm --no-warnings node_modules/ts-node/dist/bin.js",
-    "dev": "cross-env NODE_ENV=development node --experimental-specifier-resolution=node --loader=ts-node/esm --no-warnings node_modules/ts-node/dist/bin.js src/index.ts",
+    "dev": "cross-env NODE_ENV=development npm run --silent ts-node src/index.ts",
     "test": "cross-env NODE_ENV=test ts-mocha",
-    "start": "cross-env NODE_ENV=production npm run ts-node src/index.ts"
+    "start": "cross-env NODE_ENV=production npm run --silent ts-node src/index.ts"
   },
   "devDependencies": {
     "@types/mocha": "^10.0.1",
@@ -21,7 +21,9 @@
     "eslint-config-airbnb-base": "^15.0.0",
     "sinon": "^15.0.1",
     "ts-mocha": "^10.0.0",
-    "ts-node": "^10.9.1",
     "typescript": "^4.9.5"
+  },
+  "dependencies": {
+    "ts-node": "^10.9.1"
   }
 }
