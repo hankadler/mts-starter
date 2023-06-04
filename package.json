@@ -6,10 +6,12 @@
   "scripts": {
     "lint": "eslint .",
     "format": "eslint . --fix",
-    "ts-node": "node --experimental-specifier-resolution=node --loader=ts-node/esm --no-warnings node_modules/ts-node/dist/bin.js",
-    "dev": "cross-env NODE_ENV=development npm run --silent ts-node src/index.ts",
+    "node": "node --experimental-specifier-resolution=node --no-warnings",
+    "ts-node": "npm run node -- --loader=ts-node/esm node_modules/ts-node/dist/bin.js",
+    "dev": "cross-env NODE_ENV=development npm run ts-node src/index.ts --",
     "test": "cross-env NODE_ENV=test ts-mocha",
-    "start": "cross-env NODE_ENV=production npm run --silent ts-node src/index.ts"
+    "dist": "shx rm -rf dist && tsc",
+    "start": "cross-env NODE_ENV=production npm run node dist/index.js --"
   },
   "devDependencies": {
     "@types/mocha": "^10.0.1",
@@ -18,12 +20,13 @@
     "@typescript-eslint/parser": "^5.48.0",
     "eslint": "8.22.0",
     "eslint-config-airbnb-base": "^15.0.0",
+    "shx": "^0.3.4",
     "sinon": "^15.0.1",
     "ts-mocha": "^10.0.0",
+    "ts-node": "^10.9.1",
     "typescript": "^4.9.5"
   },
   "dependencies": {
-    "cross-env": "^7.0.3",
-    "ts-node": "^10.9.1"
+    "cross-env": "^7.0.3"
   }
 }
