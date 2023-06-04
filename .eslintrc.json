@@ -15,7 +15,7 @@
       "multiline": true
     }],
     "array-element-newline": ["error", {
-      "ArrayExpression": "always",
+      "ArrayExpression": "consistent",
       "ArrayPattern": "consistent"
     }],
     "comma-dangle": "off",
@@ -36,7 +36,7 @@
       "multiline": true
     }],
     "object-property-newline": ["error", {
-      "allowAllPropertiesOnSameLine": false
+      "allowAllPropertiesOnSameLine": true
     }],
     "quotes": ["error", "double"]
   }
