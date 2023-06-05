@@ -10,7 +10,7 @@
     "ts-node": "npm run node -- --loader=ts-node/esm node_modules/ts-node/dist/bin.js",
     "dev": "cross-env NODE_ENV=development npm run ts-node src/index.ts --",
     "test": "cross-env NODE_ENV=test ts-mocha",
-    "dist": "shx rm -rf dist && tsc",
+    "dist": "shx rm -rf dist && tsc && eslint dist --fix",
     "start": "cross-env NODE_ENV=production npm run node dist/index.js --"
   },
   "devDependencies": {
