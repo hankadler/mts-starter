@@ -7,8 +7,8 @@
 !test
 !test/**
 !.gitignore
+!ava.config.js
 !.eslintrc.json
-!.mocharc.json
 !package.json
 !tsconfig.json
 !README.md

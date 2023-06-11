@@ -5,13 +5,14 @@
     "module": "ESNext",
     "moduleResolution": "Node",
     "outDir": "dist",
+    "rootDir": "src",
     "strict": true,
     "target": "ESNext"
   },
+  "include": [
+    "src"
+  ],
   "exclude": [
-    "dist",
-    "node_modules",
-    "test",
     "src/lintMe.ts"
   ]
 }
