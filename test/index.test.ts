@@ -1,23 +1,22 @@
-import sinon, { SinonSpy } from "sinon";
-import test, { ExecutionContext } from "ava";
+import { beforeAll, afterAll, describe, it, vi, expect } from "vitest";
 import greet from "../src/greet";
 
-const mockConsole: Record<string, SinonSpy> = {};
-
-test.before(() => {
-  mockConsole.spy = sinon.spy(console, "log");
+beforeAll(() => {
+  vi.spyOn(console, "log");
 });
 
-test.after(() => {
-  mockConsole.spy.restore();
+afterAll(() => {
+  vi.restoreAllMocks();
 });
 
-test("logs \"Hello there!\" by default", (t: ExecutionContext) => {
-  greet();
-  t.assert(mockConsole.spy.calledWith("Hello there!"));
-});
+describe("greet works", () => {
+  it("logs \"Hello there!\" by default", () => {
+    greet();
+    expect(console.log).toBeCalledWith("Hello there!");
+  });
 
-test("logs \"Hello Ada!\" when name=Ada", (t: ExecutionContext) => {
-  greet("Ada");
-  t.assert(mockConsole.spy.calledWith("Hello Ada!"));
+  it("logs \"Hello Ada!\" when name=Ada", () => {
+    greet("Ada");
+    expect(console.log).toBeCalledWith("Hello Ada!");
+  });
 });
