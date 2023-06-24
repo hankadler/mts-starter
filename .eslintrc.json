@@ -2,9 +2,6 @@
   "env": {
     "node": true
   },
-  "extends": [
-    "airbnb-base"
-  ],
   "parser": "@typescript-eslint/parser",
   "parserOptions": {
     "ecmaVersion": 2022
@@ -17,20 +14,10 @@
       "ArrayExpression": "consistent",
       "ArrayPattern": "consistent"
     }],
-    "comma-dangle": "off",
     "function-call-argument-newline": ["error", "consistent"],
-    "function-paren-newline": ["error", "consistent"],
-    "import/extensions": "off",
-    "import/no-mutable-exports": "off",
-    "import/no-unresolved": "off",
-    "import/prefer-default-export": "off",
-    "lines-between-class-members": "off",
-    "no-await-in-loop": "off",
-    "no-console": "off",
-    "no-nested-ternary": "off",
-    "no-underscore-dangle": "off",
-    "no-param-reassign": "off",
-    "no-restricted-syntax": "off",
+    "function-paren-newline": ["warn", "consistent"],
+    "indent": ["error", 2],
+    "max-len": ["error", 100],
     "object-curly-newline": ["error", {
       "multiline": true
     }],
