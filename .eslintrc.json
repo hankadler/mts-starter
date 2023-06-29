@@ -15,7 +15,7 @@
       "ArrayPattern": "consistent"
     }],
     "function-call-argument-newline": ["error", "consistent"],
-    "function-paren-newline": ["warn", "consistent"],
+    "function-paren-newline": ["error", "consistent"],
     "indent": ["error", 2],
     "max-len": ["error", 100],
     "object-curly-newline": ["error", {

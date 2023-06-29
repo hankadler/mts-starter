@@ -1,4 +1,4 @@
-# Core Starter
+# mts-starter
 
 A core TypeScript starter project in ES
 
@@ -7,5 +7,5 @@ A core TypeScript starter project in ES
 ```bash
 npm i # install dependencies
 npm test # run tests
-npm dist # compile TS -> JS to dist/
+npm run dist # compile TS -> JS
 ```
