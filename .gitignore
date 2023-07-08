@@ -8,6 +8,8 @@
 !src/**
 !test
 !test/**
+!types
+!types/**
 !.gitignore
 !.eslintrc.json
 !package.json

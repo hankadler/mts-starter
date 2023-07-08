@@ -19,4 +19,9 @@ describe("greet works", () => {
     greet("Ada");
     expect(console.log).toBeCalledWith("Hello Ada!");
   });
+
+  it("logs \"Hello Ada! You're 20 years old!\" when name=Ada,age=20", () => {
+    greet("Ada", 20);
+    expect(console.log).toBeCalledWith("Hello Ada! You're 20 years old!");
+  });
 });
