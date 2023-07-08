@@ -4,8 +4,6 @@
 # include
 !assets
 !assets/**
-!scripts
-!scripts/**
 !src
 !src/**
 !test

@@ -6,13 +6,15 @@ console.log(dirname(__filename));
 console.log(resolve(__dirname, ".."));
 console.log(join("foo", "bar"));
 
-const objA = { one: 1, two: 2, three: 3};
+const objA = { one: 1, two: 2, three: 3 };
 
 const objB = {
   one: 1,
   two: 2,
   three: 3
 };
+
+console.log({ objB });
 
 const arr = [1, 2, 3];
 
