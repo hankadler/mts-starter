@@ -2,17 +2,18 @@
 *
 
 # include
-!assets
-!assets/**
+!check
+!check/**
 !src
 !src/**
 !test
 !test/**
-!types
-!types/**
+!type
+!type/**
 !.gitignore
 !.eslintrc.json
 !package.json
 !tsconfig.json
 !README.md
 !.npmrc
+!LICENSE
