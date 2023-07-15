@@ -1,4 +1,4 @@
-import { Person } from "../type";
+import { Person } from "./types";
 
 function greet(name: string = "there", age = NaN) {
   const person: Person = { name, age };
