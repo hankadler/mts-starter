@@ -1,3 +1,3 @@
 import greet from "./greet";
 
-greet(process.argv[2]);
+export default greet;
