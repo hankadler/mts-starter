@@ -5,7 +5,8 @@
     "module": "esnext",
     "moduleResolution": "node",
     "outDir": "build/",
-    "rootDirs": ["src",
+    "rootDirs": [
+      "src",
       "type"
     ],
     "strict": true,
