@@ -32,6 +32,7 @@
     "no-multiple-empty-lines": ["error", { "max": 1 }],
     "no-return-await": "error",
     "no-shadow": "off",
+    "no-spaced-func": "error",
     "no-trailing-spaces": "error",
     "no-undef": "error",
     "no-underscore-dangle": "error",
