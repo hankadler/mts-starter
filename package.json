@@ -9,15 +9,18 @@
   "types": "build/index.d.ts",
   "type": "module",
   "scripts": {
-    "node": "node --experimental-specifier-resolution=node --no-warnings",
+    "cjs": "node --no-warnings",
+    "mjs": "node --experimental-specifier-resolution=node --no-warnings",
+    "ts": "esrun",
     "test": "vitest --dir=test run",
     "lint": "eslint src --fix",
     "build:cjs": "tsup src/index.ts -d=build --format=cjs",
-    "build:esm": "tsup src/index.ts -d=build --format=esm && shx mv build/index.js build/index.mjs",
+    "build:mjs": "tsup src/index.ts -d=build --format=esm && shx mv build/index.js build/index.mjs",
     "build:dts": "tsup src/index.ts -d=build --dts-only --format=esm",
-    "build": "shx rm -rf build && npm run build:cjs && npm run build:esm && npm run build:dts"
+    "build": "shx rm -rf build && npm run build:cjs && npm run build:mjs && npm run build:dts"
   },
   "devDependencies": {
+    "@digitak/esrun": "^3.2.24",
     "@types/node": "^18.11.18",
     "@typescript-eslint/parser": "^5.48.0",
     "eslint": "8.22.0",
