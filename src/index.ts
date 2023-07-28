@@ -1,4 +1,4 @@
 import greet from "./greet";
 
-export default greet;
+export { greet };
 export * from "./types";

@@ -1,0 +1,6 @@
+function checkBuild() {
+  console.log("--- checkBuild ---");
+  greet(process.argv[2], Number(process.argv[3]));
+}
+
+checkBuild();
